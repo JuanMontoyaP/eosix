@@ -2,5 +2,10 @@
 name = "eosix"
 version = "0.1.0"
 edition = "2024"
+authors = ["Juan Pablo Montoya <jpmontoyap19@gmail.com>"]
+description = "A CLI for remembering your favorite quotes."
 
 [dependencies]
+clap = { version = "4.5.39", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
