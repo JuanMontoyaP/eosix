@@ -1,10 +1,11 @@
-use crate::models::cli_models::TagArg;
-
 use serde::{Deserialize, Serialize};
+use uuid::Uuid;
+
+use crate::models::cli_models::TagArg;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Quote {
-    pub id: u64,
+    pub id: Uuid,
     pub text: String,
     pub author: String,
     pub tags: TagArg,
