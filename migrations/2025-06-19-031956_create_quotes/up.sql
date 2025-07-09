@@ -1,0 +1,7 @@
+-- Your SQL goes here
+CREATE TABLE quotes (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  author VARCHAR(255) NOT NULL,
+  body TEXT NOT NULL,
+  tag VARCHAR(255) NOT NULL
+);
